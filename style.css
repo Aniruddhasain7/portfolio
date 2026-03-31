@@ -571,12 +571,13 @@ h2 {
   justify-content: center;
   transition: 0.3s ease;
   color: red;
-  border: 2px solid red;   
+  border: 1.7px solid red;   
   border-radius: 50%;  
   text-decoration: none; 
 }
 .social-icons a i {
-    font-size: 15px;
+    font-size: 17px;
+    
 }
 
 /* ================= FOOTER ================= */
