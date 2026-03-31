@@ -564,18 +564,19 @@ h2 {
 }
 
 .social-icons a {
-  width: 46px;
-  height: 46px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease;
   color: red;
   border: 2px solid red;   
-  border-radius: 50%;   
+  border-radius: 50%;  
+  text-decoration: none; 
 }
 .social-icons a i {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* ================= FOOTER ================= */
