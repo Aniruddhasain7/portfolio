@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { 
   FaDownload, 
   FaEye, 
@@ -22,7 +22,7 @@ function App() {
   const [activeDot, setActiveDot] = React.useState(0);
   const projectsGridRef = useRef(null);
   useEffect(() => {
-    emailjs.init("IsJSdW9y3wWC00ujh");
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
     const handleAnchorClick = (e) => {
       const href = e.currentTarget.getAttribute('href');
       if (href.startsWith('#')) {
@@ -77,7 +77,11 @@ function App() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm("service_3u039bj", "template_g6j1nyn", e.target)
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      e.target
+    )
       .then(() => {
         alert("Message sent successfully ✅");
         e.target.reset();
