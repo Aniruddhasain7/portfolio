@@ -498,42 +498,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="project-card">
-              <img src="/assets/projects/weather.png" alt="Weather App" />
-              <div className="project-content">
-                <h3>Weather App</h3>
-                <p>
-                  A simple and responsive that fetches real-time weather data
-                  for any city, showing temperature, humidity, and wind speed.
-                </p>
-                <div className="tech-stack">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
-                <div className="project-links">
-                  <a
-                    href="https://github.com/Aniruddhasain7/Weather-App"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn"
-                  >
-                    <FaGithub />
-                  </a>
-                  <a
-                    href="https://my-weather-app-7.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn"
-                  >
-                    <FaExternalLinkAlt />
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="project-dots">
-            {[0, 1, 2, 3, 4].map((index) => (
+            {[0, 1, 2, 3].map((index) => (
               <span
                 key={index}
                 className={`dot ${activeDot === index ? "active" : ""}`}
