@@ -37,7 +37,7 @@ nav a:hover {
   color: var(--primary-red);
 }
 .hero {
-  height: 80vh;
+  height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
