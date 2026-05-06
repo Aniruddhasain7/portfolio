@@ -15,6 +15,7 @@ import {
   FaMapMarkerAlt,
   FaExternalLinkAlt,
   FaPaperPlane,
+  FaLaptopCode,
 } from "react-icons/fa";
 import "./index.css";
 
@@ -217,7 +218,10 @@ function App() {
         </div>
       </section>
       <section id="skills">
-        <h2>Technical Skills</h2>
+        <h2>
+          <FaLaptopCode style={{ marginRight: "15px" }} />
+          Technical Skills
+        </h2>
         <div className="skills-container">
           <div className="skill-box">
             <h3>
