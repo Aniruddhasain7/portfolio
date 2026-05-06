@@ -608,42 +608,24 @@ footer {
   }
   .projects-grid {
     display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 0 5px;
+    flex-direction: column;
+    gap: 40px;
+    overflow-x: visible;
+    padding: 0;
     margin: 0;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
   }
   .project-card {
-    min-width: 98%;
-    max-width: 98%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     flex: 0 0 auto;
-    margin: 0 auto;
-    scroll-snap-align: center;
+    margin-bottom: 0;
   }
   .project-controls {
     display: none;
   }
   .project-dots {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 30px;
-    padding-bottom: 20px;
-  }
-  .project-dots .dot {
-    width: 10px;
-    height: 10px;
-    background: #444;
-    border-radius: 50%;
-    transition: 0.3s;
-    flex-shrink: 0;
-  }
-  .project-dots .dot.active {
-    background: white;
-    transform: scale(1.2);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    display: none;
   }
   .contact-container {
     grid-template-columns: 1fr;
@@ -655,7 +637,7 @@ footer {
   .project-card:hover img {
     transform: none;
   }
-  .about, .edu-exp {
+  .about, .edu-exp, .projects {
     padding: 60px 20px;
   }
 }
