@@ -11,7 +11,7 @@ A modern, responsive portfolio built with **React** and **Vite**.
 ## Tech Stack
 - **Frontend**: React 19, HTML5, CSS3, JavaScript (ES6+).
 - **Build Tool**: Vite.
-- **Deployment**: Configured for easy deployment (e.g., Vercel, Netlify).
+- **Deployment**: Configured for easy deployment.
 
 ## Getting Started
 1. Clone the repository.
