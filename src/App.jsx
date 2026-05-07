@@ -20,7 +20,6 @@ import {
 import "./index.css";
 
 function App() {
-  const [activeDot, setActiveDot] = React.useState(0);
   const projectsGridRef = useRef(null);
   useEffect(() => {
     emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
@@ -36,48 +35,13 @@ function App() {
     };
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach((link) => link.addEventListener("click", handleAnchorClick));
-    const handleScroll = () => {
-      if (!projectsGridRef.current) return;
-      const container = projectsGridRef.current;
-      const cards = container.querySelectorAll(".project-card");
-      let containerCenter = container.scrollLeft + container.offsetWidth / 2;
-      let closestIndex = 0;
-      let closestDistance = Infinity;
-      cards.forEach((card, index) => {
-        const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-        const distance = Math.abs(containerCenter - cardCenter);
-        if (distance < closestDistance) {
-          closestDistance = distance;
-          closestIndex = index;
-        }
-      });
-      setActiveDot(closestIndex);
-    };
-    const container = projectsGridRef.current;
-    if (container) {
-      container.addEventListener("scroll", handleScroll);
-    }
     return () => {
       links.forEach((link) =>
         link.removeEventListener("click", handleAnchorClick),
       );
-      if (container) {
-        container.removeEventListener("scroll", handleScroll);
-      }
     };
   }, []);
-  const scrollToProject = (index) => {
-    if (projectsGridRef.current) {
-      const cards = projectsGridRef.current.querySelectorAll(".project-card");
-      if (cards[index]) {
-        const cardWidth = cards[0].offsetWidth + 35;
-        projectsGridRef.current.scrollTo({
-          left: index * cardWidth,
-          behavior: "smooth",
-        });
-      }
-    }
-  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -322,32 +286,7 @@ function App() {
           <span>execution</span>
         </p>
         <div className="projects-wrapper">
-          <div className="project-controls">
-            <button
-              onClick={() => {
-                if (projectsGridRef.current) {
-                  projectsGridRef.current.scrollBy({
-                    left: -400,
-                    behavior: "smooth",
-                  });
-                }
-              }}
-            >
-              ❮
-            </button>
-            <button
-              onClick={() => {
-                if (projectsGridRef.current) {
-                  projectsGridRef.current.scrollBy({
-                    left: 400,
-                    behavior: "smooth",
-                  });
-                }
-              }}
-            >
-              ❯
-            </button>
-          </div>
+
           <div className="projects-grid" ref={projectsGridRef}>
             <div className="project-card">
               <img
@@ -499,15 +438,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="project-dots">
-            {[0, 1, 2, 3].map((index) => (
-              <span
-                key={index}
-                className={`dot ${activeDot === index ? "active" : ""}`}
-                onClick={() => scrollToProject(index)}
-              ></span>
-            ))}
-          </div>
+
         </div>
       </section>
       <section id="contact" className="contact">
