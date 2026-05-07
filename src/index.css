@@ -598,6 +598,12 @@ footer {
   .contact-container {
     grid-template-columns: 1fr;
   }
+  .contact-form {
+    padding: 25px;
+  }
+  .project-card img {
+    height: 250px;
+  }
   .project-card:hover {
     transform: none;
     box-shadow: 0 0 20px rgba(var(--primary-red-rgb), 0.2);

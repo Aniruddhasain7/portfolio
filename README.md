@@ -1,23 +1,27 @@
-# Aniruddha Sain | Portfolio
+# 🚀 Aniruddha Sain | Portfolio
 
-A modern, responsive portfolio built with **React** and **Vite**.
+A modern, responsive portfolio website built with **React** and **Vite** to showcase professional work, technical skills, and creative projects.
 
-## Features
-- **Responsive Design**: Optimized for all devices (Mobile, Tablet, Desktop).
-- **Interactive Carousel**: Featured projects with a smooth-scrolling carousel.
-- **Contact Form**: Integrated with **EmailJS** for direct messaging.
-- **Modern UI**: Dark mode with premium red accents and smooth transitions.
+## ✨ Features
 
-## Tech Stack
+- **📱 Responsive Design**: Optimized for all devices (Mobile, Tablet, Desktop).
+- **🎨 Modern UI**: Dark-themed aesthetic with premium red accents and smooth transitions.
+- **📧 Contact Form**: Fully integrated with **EmailJS** for direct messaging.
+- **⚡ Performance**: Built with **Vite** for lightning-fast load times.
+
+## 🛠️ Tech Stack
+
 - **Frontend**: React 19, HTML5, CSS3, JavaScript (ES6+).
 - **Build Tool**: Vite.
-- **Deployment**: Configured for easy deployment.
+- **Icons**: React Icons (Font Awesome).
+- **Service**: EmailJS for contact functionality.
 
-## Getting Started
-1. Clone the repository.
-2. Install dependencies: `npm install`.
-3. Start development server: `npm run dev`.
-4. Build for production: `npm run build`.
+## 🤝 Connect With Me
 
-## License
+- **LinkedIn**: [Aniruddha Sain](https://www.linkedin.com/in/aniruddha-sain-706220280)
+- **GitHub**: [Aniruddhasain7](https://github.com/Aniruddhasain7)
+- **Twitter**: [@SainAniruddha](https://x.com/SainAniruddha)
+
+---
+
 © 2026 Aniruddha Sain. All rights reserved.
