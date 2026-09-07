@@ -1,26 +1,26 @@
 # 🌐 Aniruddha Sain — Personal Portfolio
 
-A sleek, responsive, and modern developer portfolio built with **React 19** and **Vite** showcasing projects, skills, and experience across AI/ML and Full-Stack Web Development.
+A sleek, responsive developer portfolio built with **React 19**, **Tailwind CSS v4**, and **Vite**, showcasing projects, skills, and experience across AI/ML and Full-Stack Web Development.
 
 ---
 
 ## ✨ Features
 
-- **📱 Fully Responsive**: Optimized for seamless viewing across mobile, tablet, and desktop screens.
-- **🎨 Modern Dark UI**: Sleek dark aesthetic with ambient glow effects and smooth transitions.
-- **💼 Projects Showcase**: Interactive project cards featuring live demos and GitHub repository links.
-- **📬 Working Contact Form**: Integrated with **EmailJS** for direct messaging.
-- **⚡ Fast Performance**: Powered by **Vite** for instantaneous loading and fast builds.
+- **📱 Fully Responsive**: Optimized for mobile, tablet, and desktop screens.
+- **🎨 Modern Dark UI**: Sleek dark aesthetic with ambient red glow effects and smooth transitions.
+- **💼 Project Showcase**: Interactive cards with live demo and GitHub repository links.
+- **📬 Working Contact Form**: Integrated with EmailJS for direct messaging.
+- **⚡ Fast Performance**: Powered by Vite and Tailwind CSS v4.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 19, Vanilla CSS3 (Custom Design System)
-- **Icons**: React Icons (Font Awesome, Material Design, Lucide)
-- **Email Service**: EmailJS
+- **Framework**: React 19
+- **Styling**: Tailwind CSS v4
 - **Build Tool**: Vite
-- **Version Control**: Git & GitHub
+- **Icons**: React Icons
+- **Contact Service**: EmailJS
 
 ---
 
@@ -36,8 +36,4 @@ A sleek, responsive, and modern developer portfolio built with **React 19** and 
   <a href="mailto:aniruddhasain315@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
-  <a href="https://x.com/SainAniruddha" target="_blank">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter" />
-  </a>
 </div>
-
